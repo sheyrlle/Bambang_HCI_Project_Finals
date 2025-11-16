@@ -3,51 +3,174 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>BS in Computer Science</title>
-  <link rel="stylesheet" href="cssninaim.css" />
+  <title>Bachelor of Science in Computer Science</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", sans-serif;
+      background: #f5f7fa;
+      color: #1a1a1a;
+    }
+    header {
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    nav {
+      background: #ffffff;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    nav a {
+      text-decoration: none;
+      font-weight: 600;
+      color: #1e3c72;
+    }
+    nav a:hover {
+      color: #2a5298;
+    }
+    .hero {
+      padding: 60px 20px;
+      text-align: center;
+      background: #eef1f7;
+    }
+    .hero h2 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 1.1rem;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    .section {
+      max-width: 1000px;
+      margin: 50px auto;
+      padding: 0 20px;
+    }
+    .section h3 {
+      font-size: 1.8rem;
+      margin-bottom: 15px;
+      color: #1e3c72;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      transition: transform 0.2s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    footer {
+      margin-top: 60px;
+      padding: 20px;
+      text-align: center;
+      background: #1e3c72;
+      color: white;
+    }
+      /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes slideIn {
+      from { opacity: 0; transform: translateX(-20px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+    .animate-fade {
+      animation: fadeIn 1s ease-out forwards;
+    }
+    .animate-slide {
+      animation: slideIn 1.2s ease-out forwards;
+    }
+</style>
 </head>
 <body>
   <header>
     <h1>Bachelor of Science in Computer Science</h1>
-    <p>Your journey to becoming a tech professional starts here.</p>
+    <p>Innovation • Logic • Technology • Future</p>
   </header>
 
-  <section class="overview">
-    <h2>Program Overview</h2>
-    <p>
-      The BSCS program equips students with foundational and advanced knowledge in computing, preparing them for roles in software development, AI, cybersecurity, and more.
-    </p>
+  <nav>
+    <a href="#overview">Overview</a>
+    <a href="#skills">Skills</a>
+    <a href="#courses">Courses</a>
+    <a href="#careers">Careers</a>
+  </nav>
+
+  <div class="hero animate-fade" id="overview">
+    <h2>Welcome Future Computer Scientist</h2>
+    <p>The Bachelor of Science in Computer Science program focuses on computational theory, software development, algorithms, artificial intelligence, and problem‑solving skills to prepare students for the evolving tech industry.</p>
+  </div>
+
+  <section class="section animate-slide" id="skills">
+    <h3>Key Skills You Will Learn</h3>
+    <div class="cards">
+      <div class="card">Programming Fundamentals</div>
+      <div class="card">Data Structures & Algorithms</div>
+      <div class="card">Artificial Intelligence</div>
+      <div class="card">Database Management</div>
+      <div class="card">Computer Networks</div>
+      <div class="card">Software Engineering</div>
+    </div>
   </section>
 
-  <section class="subjects">
-    <h2>Core Subjects</h2>
-    <ul>
-      <li>Programming Fundamentals</li>
-      <li>Data Structures and Algorithms</li>
-      <li>Database Systems</li>
-      <li>Artificial Intelligence</li>
-      <li>Web Development</li>
-      <li>Internet of Things</li>
-    </ul>
+  <section class="section animate-slide" id="courses">
+    <h3>Core Courses</h3>
+    <div class="cards">
+      <div class="card">Introduction to Computing</div>
+      <div class="card">Object‑Oriented Programming</div>
+      <div class="card">Discrete Mathematics</div>
+      <div class="card">Operating Systems</div>
+      <div class="card">Web Development</div>
+      <div class="card">Machine Learning</div>
+    </div>
   </section>
 
-  <section class="careers">
-    <h2>Career Opportunities</h2>
-    <p>Graduates may pursue careers such as:</p>
-    <ul>
-      <li>Software Developer</li>
-      <li>Data Analyst</li>
-      <li>Systems Engineer</li>
-      <li>IT Specialist</li>
-      <li>Cybersecurity Analyst</li>
-    </ul>
+  <section class="section animate-slide" id="careers">
+    <h3>Career Opportunities</h3>
+    <div class="cards">
+      <div class="card">Software Engineer</div>
+      <div class="card">Web Developer</div>
+      <div class="card">AI/ML Engineer</div>
+      <div class="card">Systems Analyst</div>
+      <div class="card">Database Administrator</div>
+      <div class="card">Cybersecurity Specialist</div>
+    </div>
+  </section>
+
+  <section class="section animate-fade" id="journey">
+    <h3>The Computer Science Journey</h3>
+    <p>The path of a Computer Science student is a transformative experience filled with challenges, growth, and discovery. From writing your very first line of code to creating complex systems and exploring the depths of artificial intelligence, every step shapes you into a problem‑solver and innovator.</p>
+    <br>
+    <div class="cards">
+      <div class="card"><strong>Year 1:</strong> Foundations of Computing, logic building, and learning how computers truly work.</div>
+      <div class="card"><strong>Year 2:</strong> Advanced programming, data structures, algorithms, and software development techniques.</div>
+      <div class="card"><strong>Year 3:</strong> Specializations begin—AI, networking, database systems, web technologies, and more.</div>
+      <div class="card"><strong>Year 4:</strong> Capstone projects, internships, research, and preparing for industry‑level challenges.</div>
+    </div>
   </section>
 
   <footer>
-    <p>&copy; Naim M. Bambang </p>
+© Naim M. Bambang BSCS 4-A 2025
   </footer>
-  <fotter>
-    <p>&copy; 2025 Bachelor of Science in Computer Science</p>
-  </fotter>
 </body>
 </html>
